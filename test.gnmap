@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Mon Jul 23 12:27:31 2018 as: nmap --script smb-os-discovery -Pn -oA test 192.168.101.26
+Host: 192.168.101.26 (KIMS-PC.north.korea)	Status: Up
+Host: 192.168.101.26 (KIMS-PC.north.korea)	Ports: 135/open/tcp//msrpc///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds//Windows 7 Professional 7601 Service Pack 1 microsoft-ds/, 554/open/tcp//rtsp///, 2869/open/tcp//icslap///, 5357/open/tcp//wsdapi///, 10243/open/tcp//unknown///	Ignored State: filtered (993)
+# Nmap done at Mon Jul 23 12:27:56 2018 -- 1 IP address (1 host up) scanned in 24.60 seconds

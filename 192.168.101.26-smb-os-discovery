@@ -1,0 +1,17 @@
+# Nmap 7.70 scan initiated Mon Jul 23 16:16:54 2018 as: nmap -p445 -Pn --script smb-os-discovery -oN 192.168.101.26-smb-os-discovery 192.168.101.26
+Nmap scan report for KIMS-PC.north.korea (192.168.101.26)
+Host is up (0.025s latency).
+
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+
+Host script results:
+| smb-os-discovery: 
+|   OS: Windows 7 Professional 7601 Service Pack 1 (Windows 7 Professional 6.1)
+|   OS CPE: cpe:/o:microsoft:windows_7::sp1:professional
+|   Computer name: KimJong-Un-PC
+|   NetBIOS computer name: KIMJONG-UN-PC\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2018-07-23T16:18:50+01:00
+
+# Nmap done at Mon Jul 23 16:16:55 2018 -- 1 IP address (1 host up) scanned in 0.77 seconds

@@ -1,0 +1,17 @@
+# Nmap 7.70 scan initiated Mon Jul 23 16:16:55 2018 as: nmap -p445 -Pn --script smb-os-discovery -oN 192.168.101.27-smb-os-discovery 192.168.101.27
+Nmap scan report for Web.north.korea (192.168.101.27)
+Host is up (0.023s latency).
+
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+
+Host script results:
+| smb-os-discovery: 
+|   OS: Windows Server 2003 3790 Service Pack 2 (Windows Server 2003 5.2)
+|   OS CPE: cpe:/o:microsoft:windows_server_2003::sp2
+|   Computer name: web
+|   NetBIOS computer name: WEB\x00
+|   Workgroup: NKDMZ\x00
+|_  System time: 2018-07-23T16:18:51+01:00
+
+# Nmap done at Mon Jul 23 16:16:56 2018 -- 1 IP address (1 host up) scanned in 0.77 seconds

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Mon Jul 23 15:23:05 2018 as: nmap -p445 -Pn -&#45;script smb-os-discovery -oX smb-os-discovery 192.168.101.20-30 -->
+<nmaprun scanner="nmap" args="nmap -p445 -Pn -&#45;script smb-os-discovery -oX smb-os-discovery 192.168.101.20-30" start="1532355785" startstr="Mon Jul 23 15:23:05 2018" version="7.70" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="445"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1532355785" endtime="1532355786"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.101.20" addrtype="ipv4"/>
+<hostnames>
+<hostname name="DC.north.korea" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" product="Windows Server 2008 R2 Standard 7600 microsoft-ds" method="probed" conf="10"/></port>
+</ports>
+<hostscript><script id="smb-os-discovery" output="&#xa;  OS: Windows Server 2008 R2 Standard 7600 (Windows Server 2008 R2 Standard 6.1)&#xa;  OS CPE: cpe:/o:microsoft:windows_server_2008::-&#xa;  Computer name: DC&#xa;  NetBIOS computer name: DC\x00&#xa;  Domain name: nk.north.korea&#xa;  Forest name: nk.north.korea&#xa;  FQDN: DC.nk.north.korea&#xa;  System time: 2018-07-23T15:25:03+01:00&#xa;"><elem key="os">Windows Server 2008 R2 Standard 7600</elem>
+<elem key="lanmanager">Windows Server 2008 R2 Standard 6.1</elem>
+<elem key="server">DC\x00</elem>
+<elem key="date">2018-07-23T15:25:03+01:00</elem>
+<elem key="fqdn">DC.nk.north.korea</elem>
+<elem key="domain_dns">nk.north.korea</elem>
+<elem key="forest_dns">nk.north.korea</elem>
+<elem key="workgroup">NK\x00</elem>
+<elem key="cpe">cpe:/o:microsoft:windows_server_2008::-</elem>
+</script></hostscript><times srtt="25881" rttvar="25881" to="129405"/>
+</host>
+<host starttime="1532355785" endtime="1532355785"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.101.21" addrtype="ipv4"/>
+<hostnames>
+<hostname name="KIMS-SERVER.north.korea" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+</host>
+<host starttime="1532355785" endtime="1532355786"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.101.22" addrtype="ipv4"/>
+<hostnames>
+<hostname name="DB1.north.korea" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="25174" rttvar="25174" to="125870"/>
+</host>
+<host starttime="1532355785" endtime="1532355785"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.101.23" addrtype="ipv4"/>
+<hostnames>
+<hostname name="DB2.north.korea" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="445"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="25159" rttvar="25159" to="125795"/>
+</host>
+<host starttime="1532355785" endtime="1532355785"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.101.24" addrtype="ipv4"/>
+<hostnames>
+<hostname name="DB3.north.korea" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+</host>
+<host starttime="1532355785" endtime="1532355785"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.101.25" addrtype="ipv4"/>
+<hostnames>
+<hostname name="FILES.north.korea" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="445"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="25107" rttvar="25107" to="125535"/>
+</host>
+<host starttime="1532355785" endtime="1532355786"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.101.26" addrtype="ipv4"/>
+<hostnames>
+<hostname name="KIMS-PC.north.korea" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" product="Windows 7 Professional 7601 Service Pack 1 microsoft-ds" method="probed" conf="10"/></port>
+</ports>
+<hostscript><script id="smb-os-discovery" output="&#xa;  OS: Windows 7 Professional 7601 Service Pack 1 (Windows 7 Professional 6.1)&#xa;  OS CPE: cpe:/o:microsoft:windows_7::sp1:professional&#xa;  Computer name: KimJong-Un-PC&#xa;  NetBIOS computer name: KIMJONG-UN-PC\x00&#xa;  Workgroup: WORKGROUP\x00&#xa;  System time: 2018-07-23T15:25:03+01:00&#xa;"><elem key="os">Windows 7 Professional 7601 Service Pack 1</elem>
+<elem key="lanmanager">Windows 7 Professional 6.1</elem>
+<elem key="server">KIMJONG-UN-PC\x00</elem>
+<elem key="date">2018-07-23T15:25:03+01:00</elem>
+<elem key="fqdn">KimJong-Un-PC</elem>
+<elem key="domain_dns">KimJong-Un-PC</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+<elem key="cpe">cpe:/o:microsoft:windows_7::sp1:professional</elem>
+</script></hostscript><times srtt="25069" rttvar="25069" to="125345"/>
+</host>
+<host starttime="1532355785" endtime="1532355786"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.101.27" addrtype="ipv4"/>
+<hostnames>
+<hostname name="Web.north.korea" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" product="Windows Server 2003 3790 Service Pack 2 microsoft-ds" method="probed" conf="10"/></port>
+</ports>
+<hostscript><script id="smb-os-discovery" output="&#xa;  OS: Windows Server 2003 3790 Service Pack 2 (Windows Server 2003 5.2)&#xa;  OS CPE: cpe:/o:microsoft:windows_server_2003::sp2&#xa;  Computer name: web&#xa;  NetBIOS computer name: WEB\x00&#xa;  Workgroup: NKDMZ\x00&#xa;  System time: 2018-07-23T15:25:03+01:00&#xa;"><elem key="os">Windows Server 2003 3790 Service Pack 2</elem>
+<elem key="lanmanager">Windows Server 2003 5.2</elem>
+<elem key="server">WEB\x00</elem>
+<elem key="date">2018-07-23T15:25:03+01:00</elem>
+<elem key="fqdn">web.north.korea</elem>
+<elem key="domain_dns">web.north.korea</elem>
+<elem key="workgroup">NKDMZ\x00</elem>
+<elem key="cpe">cpe:/o:microsoft:windows_server_2003::sp2</elem>
+</script></hostscript><times srtt="25031" rttvar="25031" to="125155"/>
+</host>
+<host starttime="1532355785" endtime="1532355785"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.101.28" addrtype="ipv4"/>
+<hostnames>
+<hostname name="Workstation-1.north.korea" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+</host>
+<host starttime="1532355785" endtime="1532355785"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.101.29" addrtype="ipv4"/>
+<hostnames>
+<hostname name="Workstation-2.north.korea" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+</host>
+<host starttime="1532355785" endtime="1532355785"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.101.30" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+</host>
+<runstats><finished time="1532355786" timestr="Mon Jul 23 15:23:06 2018" elapsed="1.22" summary="Nmap done at Mon Jul 23 15:23:06 2018; 11 IP addresses (11 hosts up) scanned in 1.22 seconds" exit="success"/><hosts up="11" down="0" total="11"/>
+</runstats>
+</nmaprun>

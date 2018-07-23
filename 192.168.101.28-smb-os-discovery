@@ -1,0 +1,8 @@
+# Nmap 7.70 scan initiated Mon Jul 23 16:16:56 2018 as: nmap -p445 -Pn --script smb-os-discovery -oN 192.168.101.28-smb-os-discovery 192.168.101.28
+Nmap scan report for Workstation-1.north.korea (192.168.101.28)
+Host is up.
+
+PORT    STATE    SERVICE
+445/tcp filtered microsoft-ds
+
+# Nmap done at Mon Jul 23 16:16:58 2018 -- 1 IP address (1 host up) scanned in 2.45 seconds
