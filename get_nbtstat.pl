@@ -77,13 +77,6 @@ my $usage =<<USAGE;
 example: perl get_nbtstat.pl [ip or host]
 USAGE
 
-$ENV{'PATH'} =~ /(.*)/;
-$ENV{'PATH'} = $1;
-$ENV{'PATH'} =~ s/^://;
-$ENV{'PATH'} =~ s/:$//;
-$ENV{'PATH'} =~ s/^\.://;
-$ENV{'PATH'} =~ s/:\.//;
-
 my $target   = $ARGV[0];
 
 get_nbtstat();
