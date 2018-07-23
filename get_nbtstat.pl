@@ -7,28 +7,7 @@ use File::Basename;
 use Data::Dumper;
 use Scalar::Util qw(tainted);
 
-
-my $VERSION="0.8.9";
-my $verbose = 0;
-my $debug = 0;
-my $global_fail_limit = 1000;     # no command line option yet
-my $global_search_until_fail = 0; # no command line option yet
-my $heighest_rid = 999999;
-my $global_workgroup = undef;
-my $global_username = '';
-my $global_password = '';
-my $global_dictionary = 0;
-my $global_filename = undef;
-my $global_share_file = undef;
-my $global_detailed = 0;
-my $global_passpol = 0;
-my $global_rid_range = "500-550,1000-1050";
-my $global_known_username_string = "administrator,guest,krbtgt,domain admins,root,bin,none";
-my @dependent_programs = qw(nmblookup net rpcclient smbclient);
-my @optional_dependent_programs = qw(polenum.py ldapsearch);
-my %odp_present = ();
 my $null_session_test = 0;
-my %opts;
 
 
 ###############################################################################
@@ -141,7 +120,6 @@ sub nbt_to_human {
 	return join "\n", @nbt_out;
 }
 
-#my $global_target = shift or die $usage;
 if ($target =~ /^([a-zA-Z0-9\._-]+)$/) {
 	$target = $0;
 } else {
