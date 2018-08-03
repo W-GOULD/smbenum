@@ -1,8 +1,0 @@
-# Nmap 7.70 scan initiated Mon Jul 23 16:16:51 2018 as: nmap -p445 -Pn --script smb-os-discovery -oN 192.168.101.23-smb-os-discovery 192.168.101.23
-Nmap scan report for DB2.north.korea (192.168.101.23)
-Host is up (0.031s latency).
-
-PORT    STATE  SERVICE
-445/tcp closed microsoft-ds
-
-# Nmap done at Mon Jul 23 16:16:51 2018 -- 1 IP address (1 host up) scanned in 0.50 seconds

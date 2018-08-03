@@ -13,6 +13,6 @@ do
 	Workgroup=$(cat $i-smb-os-discovery | grep 'Workgroup:')
 	Domain=$(cat $i-smb-os-discovery | grep 'Domain name:')
 	FQDN=$(cat $i-smb-os-discovery | grep 'FQDN:')
-	$OS\n$Computername\n$NetBIOS\n$Workgroup\n$Domain\n$FQDN | tee $i-smb-info
+	echo $OS $Computername $NetBIOS $Workgroup $Domain $FQDN | tee 
 
 done
